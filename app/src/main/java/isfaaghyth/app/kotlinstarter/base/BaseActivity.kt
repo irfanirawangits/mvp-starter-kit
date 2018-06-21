@@ -15,7 +15,6 @@ abstract class BaseActivity<P: BasePresenter<*>>: AppCompatActivity() {
 
     protected fun binding(layoutID: Int) {
         setContentView(layoutID)
-        ButterKnife.bind(this)
         presenter = initPresenter
     }
 
